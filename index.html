@@ -62,6 +62,71 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-移动硬盘修复" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/04/04/移动硬盘修复/" class="article-date">
+  <time datetime="2018-04-04T07:29:08.000Z" itemprop="datePublished">2018-04-04</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/04/04/移动硬盘修复/">移动硬盘修复</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h6 id="经常用的一块移动硬盘，但有一次在复制文件的时候突然断开了，然后再连接电脑就显示盘符打不开了，而且只要双击或者右键这个盘符就会一直卡住，整个我的电脑都打不开了，必须拔出移动硬盘才能退出，否则一直卡那里，根本无法打开其他文件夹了，以为是usb线的问题，换了还是一样不行，换了几个usb口问题依旧，能看见盘符但打不开。"><a href="#经常用的一块移动硬盘，但有一次在复制文件的时候突然断开了，然后再连接电脑就显示盘符打不开了，而且只要双击或者右键这个盘符就会一直卡住，整个我的电脑都打不开了，必须拔出移动硬盘才能退出，否则一直卡那里，根本无法打开其他文件夹了，以为是usb线的问题，换了还是一样不行，换了几个usb口问题依旧，能看见盘符但打不开。" class="headerlink" title="经常用的一块移动硬盘，但有一次在复制文件的时候突然断开了，然后再连接电脑就显示盘符打不开了，而且只要双击或者右键这个盘符就会一直卡住，整个我的电脑都打不开了，必须拔出移动硬盘才能退出，否则一直卡那里，根本无法打开其他文件夹了，以为是usb线的问题，换了还是一样不行，换了几个usb口问题依旧，能看见盘符但打不开。"></a>经常用的一块移动硬盘，但有一次在复制文件的时候突然断开了，然后再连接电脑就显示盘符打不开了，而且只要双击或者右键这个盘符就会一直卡住，整个我的电脑都打不开了，必须拔出移动硬盘才能退出，否则一直卡那里，根本无法打开其他文件夹了，以为是usb线的问题，换了还是一样不行，换了几个usb口问题依旧，能看见盘符但打不开。</h6><p>解决办法：</p>
+<ul>
+<li>方案一    <ul>
+<li>点击左下角的开始按钮”然后点击运行按钮，然后输入cmd，这个命令是打开dos窗口，或者直接快捷键“Win + R”然后输入cmd。</li>
+<li>然后会弹出一个dos窗口如下，输入“chkdsk H:/f”意思是修复H盘的意思，注意H之前有一个空格，如果你的移动硬盘是G盘就应该是“chkdsk G:/f”，输入完毕后点击确定，然后系统开始修复移动硬盘，过一会儿就修复完成了。</li>
+<li>然后打开“我的电脑”就会发现里面不再显示H：这个盘符了，而是显示出硬盘的名字了，而且能进入硬盘里面了，最重要的是数据都在，一个也没有损坏也没有丢失。</li>
+<li>另外如果上面的修复后，虽然能打开，但里面还是有某个文件夹打不开的话，尝试使用“chkdsk H:/r”命令来修复，它的意思是会检测坏道，不止是修复数据。</li>
+<li><strong>重点： 如果windows系统使用这个命令还是不成功的话</strong>，可以尝试使用苹果电脑，没有的话去苹果商店说明情况会让你使用一下，修复方式一样，也就是说苹果电脑的终端也一样的输入“chkdsk H:/f”，有人遇到win的系统修复不了，但苹果mac电脑能修复成功，数据都还在。</li>
+</ul>
+</li>
+<li>方法二<ul>
+<li>如果觉得dos命令太复杂的话，或者你是win10系统的话，可以使用下面的方式来解决。<ul>
+<li>利用系统自带的“磁盘查错”功能来修复可移动磁盘。</li>
+<li>右击“可移动磁盘”盘符，从其右侧菜单中选择“属性”项。</li>
+<li>然后再弹出的窗口里，选择第二个工具选项，然后点击检查按钮。</li>
+<li>然后在打开的页面上点击 修复驱动器按钮，系统就会自动修复移动硬盘了，我们只需要等待。</li>
+<li>修复成功后会返回信息，这时候我们再去我的电脑打开移动硬盘看看数据吧，应该是修复好了。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>方法三<ul>
+<li>驱动故障导致的移动硬盘打不开，这时候只需要鼠标右键我的电脑，点击管理，然后选择设备管理器，可以看到右侧设备里有未知设备，这就说明移动硬盘没有安装正确。</li>
+<li>这时候我们需要借助第三方软件，驱动人生来更新修复移动硬盘的驱动。</li>
+<li>然后就会直接等待修复成功，一切都是自带修的，我们只需要点击几个按钮就行。</li>
+<li>最后提示要重启电脑，按照做就行，然后你就会发现我的电脑里的移动硬盘已经可以打开了，里面的数据也没损失。</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/04/04/移动硬盘修复/" data-id="cjfksdacs0002r6xm4rq4hjfm" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-iOS中pch文件的设置" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/04/04/iOS中pch文件的设置/" class="article-date">
@@ -101,7 +166,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/04/04/iOS中pch文件的设置/" data-id="cjfkcrw000000ecxm4kixcchm" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/04/04/iOS中pch文件的设置/" data-id="cjfksdacp0001r6xmicyrrbkq" class="article-share-link">Share</a>
       
       
     </footer>
@@ -493,7 +558,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/04/04/面试题总结/" data-id="cjfkcrw090003ecxmzyml4l8f" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/04/04/面试题总结/" data-id="cjfksdacu0004r6xmv52ee4rd" class="article-share-link">Share</a>
       
       
     </footer>
@@ -549,7 +614,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/04/03/GIT常用的命令/" data-id="cjfkcrw070002ecxm2lttjwme" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/04/03/GIT常用的命令/" data-id="cjfksdacg0000r6xmc75icu3y" class="article-share-link">Share</a>
       
       
     </footer>
@@ -585,7 +650,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/04/01/念十八/" data-id="cjfkcrw050001ecxmunl8vh5b" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/04/01/念十八/" data-id="cjfksdact0003r6xmg16kmtbb" class="article-share-link">Share</a>
       
       
     </footer>
@@ -624,6 +689,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2018/04/04/移动硬盘修复/">移动硬盘修复</a>
+          </li>
         
           <li>
             <a href="/2018/04/04/iOS中pch文件的设置/">iOS中pch文件的设置</a>
