@@ -62,6 +62,55 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-iOS中pch文件的设置" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/04/04/iOS中pch文件的设置/" class="article-date">
+  <time datetime="2018-04-04T00:26:22.000Z" itemprop="datePublished">2018-04-04</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/04/04/iOS中pch文件的设置/">iOS中pch文件的设置</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="pch文件是什么"><a href="#pch文件是什么" class="headerlink" title="pch文件是什么"></a>pch文件是什么</h2><p>​    预编译头文件(一般扩展名为.PCH),是把一个工程中较稳定的代码预先编译好放在一个文件(.PCH)里,它们在整个工程中是较为稳定的,即在工程开发过程中不会经常被修改的代码。在我的理解里是把一些宏定义（kScreenW等），一些要在多个类中使用的头文件在此文件中书写。简单来说，在.pch文件中定义的宏定义会作用到项目中的所有文件。</p>
+<h2 id="pch文件的作用"><a href="#pch文件的作用" class="headerlink" title="pch文件的作用"></a>pch文件的作用</h2><p>   对于xcode6以后创建工程不在自动添加.pch文件了，很多资料认为.pch文件会影响效率。我觉得.pch文件总体上会加速编译，因为xcode会对.pch文件中的定义预编译并缓存。之所以减慢编译速度应该是因为很多开发者使用方式不对吧。<br>   我们可以想到.pch是把双刃剑，提供便利性的同时如果使用不当可能增加Build的时间。</p>
+<p>   因此我们在使用时，要注意以下几点：</p>
+<ul>
+<li>不要把绝大多数甚至是所有的宏定义放进来。</li>
+<li>在某个类或者某几个类中使用的宏定义别放进来。</li>
+<li>放置公用性高的头文件，比如使用率较高的fundation框架,第三方库头文件。</li>
+<li>为了整洁性的要求，建议把公用性低的宏定义整理到某个头文件再将该头文件写入.pch文件。</li>
+</ul>
+<h2 id="如何设置pch文件"><a href="#如何设置pch文件" class="headerlink" title="如何设置pch文件"></a>如何设置pch文件</h2><p>1.新建文件，选择PCH File<br><img src="https://img-blog.csdn.net/20170321112152863?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSXZlbl9tYQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="img"><br>2.点击项目，选择Bulid Settings，在搜索框中写入Prefix Header<br><img src="https://img-blog.csdn.net/20170321112356958?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSXZlbl9tYQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="img"><br>3.找到这一栏Precompile Prefix Header，将NO改为Yes<br><img src="https://img-blog.csdn.net/20170321112541759?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSXZlbl9tYQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>4.在Prefix Header这一栏后面双击出现白框，输入$(SRCROOT)/项目名/Prefix.pch 。<br>注意这里的SRCROOT一定要大写，项目名不能出现汉字。<br><img src="https://img-blog.csdn.net/20170321112640604?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSXZlbl9tYQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>至此，就可以在pch文件中写入宏定义,以及导入一些头文件。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#define kScreenW [UIScreen mainScreen].bounds.size.width</span><br><span class="line">#define kScreenH [UIScreen mainScreen].bounds.size.height12</span><br></pre></td></tr></table></figure>
+<p>这样在所有的项目文件里都可以直接使用kScreenW来代替[UIScreen mainScreen].bounds.size.width，是不是很简便？</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/04/04/iOS中pch文件的设置/" data-id="cjfkcrw000000ecxm4kixcchm" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-面试题总结" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/04/04/面试题总结/" class="article-date">
@@ -444,7 +493,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/04/04/面试题总结/" data-id="cjfk60bm900015wxmfoejn8rg" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/04/04/面试题总结/" data-id="cjfkcrw090003ecxmzyml4l8f" class="article-share-link">Share</a>
       
       
     </footer>
@@ -500,7 +549,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/04/03/GIT常用的命令/" data-id="cjfk60bm000005wxmc606467c" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/04/03/GIT常用的命令/" data-id="cjfkcrw070002ecxm2lttjwme" class="article-share-link">Share</a>
       
       
     </footer>
@@ -536,7 +585,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/04/01/念十八/" data-id="cjfk60bmb00025wxmifv5gh4r" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/04/01/念十八/" data-id="cjfkcrw050001ecxmunl8vh5b" class="article-share-link">Share</a>
       
       
     </footer>
@@ -575,6 +624,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2018/04/04/iOS中pch文件的设置/">iOS中pch文件的设置</a>
+          </li>
         
           <li>
             <a href="/2018/04/04/面试题总结/">面试题总结</a>
