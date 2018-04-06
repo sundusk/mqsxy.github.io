@@ -62,6 +62,42 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-Python3基本语法" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/04/06/Python3基本语法/" class="article-date">
+  <time datetime="2018-04-06T05:19:34.000Z" itemprop="datePublished">2018-04-06</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/04/06/Python3基本语法/">Python3基本语法</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/04/06/Python3基本语法/" data-id="cjfni46wj00009fdledpfev00" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-移动硬盘修复" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/04/04/移动硬盘修复/" class="article-date">
@@ -117,7 +153,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/04/04/移动硬盘修复/" data-id="cjfksdacs0002r6xm4rq4hjfm" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/04/04/移动硬盘修复/" data-id="cjfni46wu00049fdlrhfdtzd2" class="article-share-link">Share</a>
       
       
     </footer>
@@ -158,7 +194,7 @@
 <li>放置公用性高的头文件，比如使用率较高的fundation框架,第三方库头文件。</li>
 <li>为了整洁性的要求，建议把公用性低的宏定义整理到某个头文件再将该头文件写入.pch文件。</li>
 </ul>
-<h2 id="如何设置pch文件"><a href="#如何设置pch文件" class="headerlink" title="如何设置pch文件"></a>如何设置pch文件</h2><p>1.新建文件，选择PCH File<br><img src="https://img-blog.csdn.net/20170321112152863?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSXZlbl9tYQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="img"><br>2.点击项目，选择Bulid Settings，在搜索框中写入Prefix Header<br><img src="https://img-blog.csdn.net/20170321112356958?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSXZlbl9tYQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="img"><br>3.找到这一栏Precompile Prefix Header，将NO改为Yes<br><img src="https://img-blog.csdn.net/20170321112541759?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSXZlbl9tYQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>4.在Prefix Header这一栏后面双击出现白框，输入$(SRCROOT)/项目名/Prefix.pch 。<br>注意这里的SRCROOT一定要大写，项目名不能出现汉字。<br><img src="https://img-blog.csdn.net/20170321112640604?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSXZlbl9tYQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<h2 id="如何设置pch文件"><a href="#如何设置pch文件" class="headerlink" title="如何设置pch文件"></a>如何设置pch文件</h2><p>1.新建文件，选择PCH File<br>2.点击项目，选择Bulid Settings，在搜索框中写入Prefix Header<br>3.找到这一栏Precompile Prefix Header，将NO改为Yes<br>4.在Prefix Header这一栏后面双击出现白框，输入$(SRCROOT)/项目名/Prefix.pch 。<br>注意这里的SRCROOT一定要大写，项目名不能出现汉字。 </p>
 <p>至此，就可以在pch文件中写入宏定义,以及导入一些头文件。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#define kScreenW [UIScreen mainScreen].bounds.size.width</span><br><span class="line">#define kScreenH [UIScreen mainScreen].bounds.size.height12</span><br></pre></td></tr></table></figure>
 <p>这样在所有的项目文件里都可以直接使用kScreenW来代替[UIScreen mainScreen].bounds.size.width，是不是很简便？</p>
@@ -166,7 +202,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/04/04/iOS中pch文件的设置/" data-id="cjfksdacp0001r6xmicyrrbkq" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/04/04/iOS中pch文件的设置/" data-id="cjfni46wn00019fdl4wttlv9g" class="article-share-link">Share</a>
       
       
     </footer>
@@ -558,7 +594,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/04/04/面试题总结/" data-id="cjfksdacu0004r6xmv52ee4rd" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/04/04/面试题总结/" data-id="cjfni46ww00059fdl7tjmuwh0" class="article-share-link">Share</a>
       
       
     </footer>
@@ -614,7 +650,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/04/03/GIT常用的命令/" data-id="cjfksdacg0000r6xmc75icu3y" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/04/03/GIT常用的命令/" data-id="cjfni46ws00029fdlu6ppftzi" class="article-share-link">Share</a>
       
       
     </footer>
@@ -650,7 +686,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/04/01/念十八/" data-id="cjfksdact0003r6xmg16kmtbb" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/04/01/念十八/" data-id="cjfni46wt00039fdlgxw2njx8" class="article-share-link">Share</a>
       
       
     </footer>
@@ -691,6 +727,10 @@
       <ul>
         
           <li>
+            <a href="/2018/04/06/Python3基本语法/">Python3基本语法</a>
+          </li>
+        
+          <li>
             <a href="/2018/04/04/移动硬盘修复/">移动硬盘修复</a>
           </li>
         
@@ -704,10 +744,6 @@
         
           <li>
             <a href="/2018/04/03/GIT常用的命令/">GIT常用的命令</a>
-          </li>
-        
-          <li>
-            <a href="/2018/04/01/念十八/">念十八</a>
           </li>
         
       </ul>
