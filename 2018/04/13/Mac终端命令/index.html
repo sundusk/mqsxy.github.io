@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Mac终端命令 | sundusk</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="基本命令 1、列出文件 ls 参数 目录名        例: 看看驱动目录下有什么:ls /System/Library/Extensions 参数 -w 显示中文，-l 详细信息， -a 包括隐藏文件 2、转换目录      cd    例：想到驱动目录下溜达一圈   cd /System/Library/Extensions 3、建立新目录 mkdir 目录名     例：在驱动目录下建一个">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mac终端命令">
+<meta property="og:url" content="http://yoursite.com/2018/04/13/Mac终端命令/index.html">
+<meta property="og:site_name" content="sundusk">
+<meta property="og:description" content="基本命令 1、列出文件 ls 参数 目录名        例: 看看驱动目录下有什么:ls /System/Library/Extensions 参数 -w 显示中文，-l 详细信息， -a 包括隐藏文件 2、转换目录      cd    例：想到驱动目录下溜达一圈   cd /System/Library/Extensions 3、建立新目录 mkdir 目录名     例：在驱动目录下建一个">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-04-13T08:03:51.590Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Mac终端命令">
+<meta name="twitter:description" content="基本命令 1、列出文件 ls 参数 目录名        例: 看看驱动目录下有什么:ls /System/Library/Extensions 参数 -w 显示中文，-l 详细信息， -a 包括隐藏文件 2、转换目录      cd    例：想到驱动目录下溜达一圈   cd /System/Library/Extensions 3、建立新目录 mkdir 目录名     例：在驱动目录下建一个">
+  
+    <link rel="alternate" href="/atom.xml" title="sundusk" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">sundusk</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Mac终端命令" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/04/13/Mac终端命令/" class="article-date">
+  <time datetime="2018-04-13T08:02:28.000Z" itemprop="datePublished">2018-04-13</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Mac终端命令
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>基本命令</p>
+<p>1、列出文件</p>
+<p>ls 参数 目录名        例: 看看驱动目录下有什么:ls /System/Library/Extensions</p>
+<p>参数 -w 显示中文，-l 详细信息， -a 包括隐藏文件</p>
+<p>2、转换目录     </p>
+<p>cd    例：想到驱动目录下溜达一圈   cd /System/Library/Extensions</p>
+<p>3、建立新目录</p>
+<p>mkdir 目录名     例：在驱动目录下建一个备份目录 backup     mkdir /System/Library/Extensions/backup</p>
+<p>在桌面上建一个备份目录 backup    mkdir /User/用户名/Desktop/backup</p>
+<p>4、拷贝文件</p>
+<p>cp 参数 源文件 目标文件    例：想把桌面的Natit.kext 拷贝到驱动目录中  cp -R /User/用户名/Desktop/Natit.kext /System/Library/Extensions</p>
+<p>参数R表示对目录进行递归操作，kext在图形界面下看起来是个文件，实际上是个文件夹。</p>
+<p>把驱动目录下的所有文件备份到桌面backup</p>
+<p>cp -R /System/Library/Extensions/* /User/用户名/Desktop/backup</p>
+<p>5、删除文件</p>
+<p>rm 参数 文件   例：想删除驱动的缓存  rm -rf /System/Library/Extensions.kextcache     rm -rf /System/Library/Extensions.mkext</p>
+<p>参数－rf 表示递归和强制，千万要小心使用，如果执行了 rm -rf / 你的系统就全没了</p>
+<p>6、移动文件</p>
+<p>mv 文件   例：想把AppleHDA.Kext 移到桌面    mv /System/Library/Extensions/AppleHDA.kext /User/用户名/Desktop</p>
+<p>想把AppleHDA.Kext 移到备份目录中   mv /System/Library/Extensions/AppleHDA.kext /System/Library/Extensions/backup</p>
+<p>7、文本编辑</p>
+<p>nano 文件名   例：编辑natit Info.plist     nano /System/Library/Extensions/Natit.kext/Info.plist</p>
+<p>目录操作</p>
+<p>命令名                       功能描述                                             使用举例</p>
+<p>mkdir                        创建一个目录                                       mkdir dirname</p>
+<p>rmdir                         删除一个目录                                       rmdir dirname</p>
+<p>mvdir                        移动或重命名一个目录                         mvdir dir1 dir2</p>
+<p>cd                             改变当前目录                                       cd dirname</p>
+<p>pwd                          显示当前目录的路径名                          pwd</p>
+<p>ls                              显示当前目录的内容                             ls -la</p>
+<p>文件操作</p>
+<p>命令名                                 功能描述                                  使用举例</p>
+<p>cat                                      显示或连接文件                       cat filename</p>
+<p>od                                       显示非文本文件的内容            od -c filename</p>
+<p>cp                                      复制文件或目录                        cp file1 file2</p>
+<p>rm                                     删除文件或目录                         rm filename</p>
+<p>mv                                    改变文件名或所在目录               mv file1 file2</p>
+<p>find                                  使用匹配表达式查找文件             find . -name “*.c” -print</p>
+<p>file                                  显示文件类型                                file filename</p>
+<p>选择操作</p>
+<p>命令名                             功能描述                                       使用举例</p>
+<p>head                              显示文件的最初几行                       head -20 filename</p>
+<p>tail                                 显示文件的最后几行                       tail -15 filename</p>
+<p>cut                                显示文件每行中的某些域                 cut -f1,7 -d: /etc/passwd</p>
+<p>colrm                            从标准输入中删除若干列                  colrm 8 20 file2</p>
+<p>diff                                比较并显示两个文件的差异                diff file1 file2</p>
+<p>sort                             排序或归并文件                                      sort -d -f -u file1</p>
+<p>uniq                           去掉文件中的重复行                                  uniq file1 file2</p>
+<p>comm                        显示两有序文件的公共和非公共行              comm file1 file2</p>
+<p>wc                            统计文件的字符数、词数和行数                    wc filename</p>
+<p>nl                             给文件加上行号                                         nl file1 &gt;file2</p>
+<p>进程操作</p>
+<p>命令名                     功能描述                                                 使用举例</p>
+<p>ps                           显示进程当前状态                                     ps u</p>
+<p>kill                         终止进程                                                     kill -9 30142</p>
+<p>时间操作</p>
+<p>命令名                           功能描述                                            使用举例</p>
+<p>date                    显示系统的当前日期和时间                           date</p>
+<p>cal                                   显示日历                                       cal 8 1996</p>
+<p>time                         统计程序的执行时间                            time a.out</p>
+<p>网络与通信操作</p>
+<p>命令名                                功能描述                                       使用举例</p>
+<p>telnet                                  远程登录                                 telnet <a href="http://hpc.sp.net.edu.cn/" target="_blank" rel="noopener">hpc.sp.net.edu.cn</a></p>
+<p>rlogin                                 远程登录                                 rlogin hostname -l username</p>
+<p>rsh                       在远程主机执行指定命令                             rsh f01n03 date</p>
+<p>ftp                   在本地主机与远程主机之间传输文件                ftp<a href="ftp://ftp.sp.net.edu.cn/" target="_blank" rel="noopener">ftp.sp.net.edu.cn</a></p>
+<p>rcp                 在本地主机与远程主机 之间复制文件               rcp file1 host1:file2</p>
+<p>ping                   给一个网络主机发送 回应请求                   ping <a href="http://hpc.sp.net.edu.cn/" target="_blank" rel="noopener">hpc.sp.net.edu.cn</a></p>
+<p>mail                          阅读和发送电子邮件                                          mail</p>
+<p>write                      给另一用户发送报文                                  write username pts/1</p>
+<p>mesg                    允许或拒绝接收报文                                                 mesg n</p>
+<p>Korn Shell 命令              </p>
+<p> 命令名                                 功能描述                                        使用举例</p>
+<p>history               列出最近执行过的 几条命令及编号                       history</p>
+<p>r                         重复执行最近执行过的 某条命令                            r -2</p>
+<p>alias                            给某个命令定义别名                                  alias del=rm -i</p>
+<p>unalias                     取消对某个别名的定义                                  unalias del</p>
+<p>其它命令</p>
+<p>命令名                                  功能描述                                         使用举例</p>
+<p>uname                     显示操作系统的有关信息                              uname -a</p>
+<p>clear                       清除屏幕或窗口内容                                        clear</p>
+<p>env                        显示当前所有设置过的环境变量                         env</p>
+<p>who                       列出当前登录的所有用户                                    who</p>
+<p>whoami                  显示当前正进行操作的用户名                              whoami</p>
+<p>tty                         显示终端或伪终端的名称                                         tty</p>
+<p>stty                         显示或重置控制键定义                                        stty -a</p>
+<p>du                                  查询磁盘使用情况                         du -k subdir</p>
+<p>df /tmp                          显示文件系统的总空间和可用空间</p>
+<p>w                                  显示当前系统活动的总信息</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/04/13/Mac终端命令/" data-id="cjfxo2l5b0001ladl302pa2ip" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2018/04/04/移动硬盘修复/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">移动硬盘修复</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/04/13/Mac终端命令/">Mac终端命令</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/04/移动硬盘修复/">移动硬盘修复</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/04/iOS中pch文件的设置/">iOS中pch文件的设置</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/04/面试题总结/">面试题总结</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/03/GIT常用的命令/">GIT常用的命令</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
