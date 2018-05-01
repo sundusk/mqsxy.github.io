@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>终端命令行补充 | sundusk</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="一、man我们在使用一些程序的时候，可能并不知道他都有哪些命令，这个是时候我们就可以用man命令了。man全称manual 用户手册的意思 获取 ls 的帮助 $ man ls 查看有多少（针对不同方面的）同名的手册 $ man -f ls ls (1) - list directory contents ls (1p) - list directory contents 查看特定的手册 $ ma">
+<meta property="og:type" content="article">
+<meta property="og:title" content="终端命令行补充">
+<meta property="og:url" content="http://yoursite.com/2018/05/01/终端命令行补充/index.html">
+<meta property="og:site_name" content="sundusk">
+<meta property="og:description" content="一、man我们在使用一些程序的时候，可能并不知道他都有哪些命令，这个是时候我们就可以用man命令了。man全称manual 用户手册的意思 获取 ls 的帮助 $ man ls 查看有多少（针对不同方面的）同名的手册 $ man -f ls ls (1) - list directory contents ls (1p) - list directory contents 查看特定的手册 $ ma">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-05-01T15:07:02.439Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="终端命令行补充">
+<meta name="twitter:description" content="一、man我们在使用一些程序的时候，可能并不知道他都有哪些命令，这个是时候我们就可以用man命令了。man全称manual 用户手册的意思 获取 ls 的帮助 $ man ls 查看有多少（针对不同方面的）同名的手册 $ man -f ls ls (1) - list directory contents ls (1p) - list directory contents 查看特定的手册 $ ma">
+  
+    <link rel="alternate" href="/atom.xml" title="sundusk" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">sundusk</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="mac-终端命令行补充" class="article article-type-mac" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/05/01/终端命令行补充/" class="article-date">
+  <time datetime="2018-05-01T15:02:18.000Z" itemprop="datePublished">2018-05-01</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      终端命令行补充
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="一、man"><a href="#一、man" class="headerlink" title="一、man"></a>一、man</h3><p>我们在使用一些程序的时候，可能并不知道他都有哪些命令，这个是时候我们就可以用man命令了。man全称manual 用户手册的意思</p>
+<p>获取 ls 的帮助</p>
+<p>$ man ls</p>
+<p>查看有多少（针对不同方面的）同名的手册</p>
+<p>$ man -f ls</p>
+<p>ls (1) - list directory contents</p>
+<p>ls (1p) - list directory contents</p>
+<p>查看特定的手册</p>
+<p>$ man 1p ls</p>
+<p>退出man</p>
+<p>执行以后，在 man page 页面中按 q 退出</p>
+<h3 id="二、help"><a href="#二、help" class="headerlink" title="二、help"></a>二、help</h3><p>help一看名字就知道是什么意思了，一般程序都会有这个参数，会输出最简单有用的介绍。</p>
+<p>$ man –help ### 获取 man 的帮助</p>
+<p>$ ls –help ### 获取 ls 的帮助</p>
+<h3 id="三、光标"><a href="#三、光标" class="headerlink" title="三、光标"></a>三、光标</h3><p>up(方向键上) 可以调出输入历史执行记录，快速执行命令</p>
+<p>down(方向键下) 配合 up 选择历史执行记录</p>
+<p>Home 移动光标到本行开头</p>
+<p>End 移动光标到本行结尾</p>
+<p>PgUp 向上翻页</p>
+<p>PaDN 向下翻页</p>
+<p>在苹果Mac电脑的键盘上没有Home, End, Page UP, Page DOWN这些键，可以通过用Fn键来组合得到同样的功能：Home键=Fn+左方向、End键=Fn+右方向、PageUP=Fn+上方向、PageDOWN=Fn+下方向</p>
+<h3 id="四、终止当前程序"><a href="#四、终止当前程序" class="headerlink" title="四、终止当前程序"></a>四、终止当前程序</h3><p>1</p>
+<p>ctrl + c 终止当前程序</p>
+<p>Tab 补全</p>
+<p>Tab补全是非常有用的一个功能，可以用来自动补全命令或文件名</p>
+<p>未输入状态下连按两次 Tab 列出所有可用命令 已输入部分命令名或文件名，按 Tab 进行自动补全 在我输入De以后按Tab键，会补全Desktop/，然后在连续按下两次Tab键，会查看Desktop/下所有的目录</p>
+<h3 id="五、cd"><a href="#五、cd" class="headerlink" title="五、cd"></a>五、cd</h3><p>cd 就是根据路径找到文件</p>
+<p>譬如桌面有一个Text文件</p>
+<ul>
+<li>绝对路径:绝对路径强调从 /起，一直到所在路径cd Desktop/Text</li>
+<li>相对路径: 直接cd Text</li>
+<li>代表当前目录；.. 代表上级目录；上级目录可以 cd ..</li>
+</ul>
+<h3 id="六、ls"><a href="#六、ls" class="headerlink" title="六、ls"></a>六、ls</h3><p>$ ls ### 仅列出当前目录可见文件</p>
+<p>$ ls -l ### 列出当前目录可见文件详细信息</p>
+<p>$ ls -hl ### 列出详细信息并以可读大小显示文件大小</p>
+<p>$ ls -al ### 列出所有文件（包括隐藏）的详细信息</p>
+<h3 id="七、more"><a href="#七、more" class="headerlink" title="七、more"></a>七、more</h3><p>一般当文档太长的时候，我们屏幕一屏显示不完全，这个时候我们就需要使用more命令了，more 逐行显示内容</p>
+<h3 id="八、less"><a href="#八、less" class="headerlink" title="八、less"></a>八、less</h3><p>less 与 more 相似，不过 less 支持上下滚动查看内容，而 more 只支持逐行显示。</p>
+<h3 id="九、重启命令"><a href="#九、重启命令" class="headerlink" title="九、重启命令"></a>九、重启命令</h3><p>reboot 为重启命令</p>
+<p>reboot</p>
+<p>‘$’和 ‘#’的区别在于 ‘$’普通用户即可执行</p>
+<p>而 ‘#’为 root 用户才可执行，或普通用户使用 ‘sudo’</p>
+<h3 id="十、关机命令"><a href="#十、关机命令" class="headerlink" title="十、关机命令"></a>十、关机命令</h3><p>poweroff 为关机命令</p>
+<p>poweroff 马上关机</p>
+<h3 id="十一、ping"><a href="#十一、ping" class="headerlink" title="十一、ping"></a>十一、ping</h3><p>ping主要用于测试网络连通，通过对目标机器发送数据包来测试两台主机是否连通，及延时情况 通过域名 ping，若 DNS 未设置好，可能无法 ping 通</p>
+<h3 id="十二、获取网络参数"><a href="#十二、获取网络参数" class="headerlink" title="十二、获取网络参数"></a>十二、获取网络参数</h3><p>ifconfig命令被用于配置和显示Linux内核中网络接口的网络参数。用ifconfig命令配置的网卡信息，在网卡重启后机器重启后，配置就不存在。要想将上述的配置信息永远的存的电脑里，那就要修改网卡的配置文件了</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/05/01/终端命令行补充/" data-id="cjgnt3xgv0004mqxmfnoqu8i1" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2018/04/13/Swift-八种排序算法/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Swift-八种排序算法</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/05/01/终端命令行补充/">终端命令行补充</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/13/Swift-八种排序算法/">Swift-八种排序算法</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/13/Mac终端命令/">Mac终端命令</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/04/移动硬盘修复/">移动硬盘修复</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/04/iOS中pch文件的设置/">iOS中pch文件的设置</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
