@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>MYSQL命令大全 | sundusk</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="常见的MySQL命令大全2007-11-09 17:59一、连接MySQL   格式： mysql -h主机地址 -u用户名 －p用户密码   1、例1：连接到本机上的MYSQL。   首先在打开DOS窗口，然后进入目录 mysqlbin，再键入命令mysql -uroot -p，回车后提示你输密码，如果刚安装好MYSQL，超级用户root是没有密码的，故直接回车即可进入到MYSQL中了，MY">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MYSQL命令大全">
+<meta property="og:url" content="http://yoursite.com/2018/05/02/MYSQL命令大全/index.html">
+<meta property="og:site_name" content="sundusk">
+<meta property="og:description" content="常见的MySQL命令大全2007-11-09 17:59一、连接MySQL   格式： mysql -h主机地址 -u用户名 －p用户密码   1、例1：连接到本机上的MYSQL。   首先在打开DOS窗口，然后进入目录 mysqlbin，再键入命令mysql -uroot -p，回车后提示你输密码，如果刚安装好MYSQL，超级用户root是没有密码的，故直接回车即可进入到MYSQL中了，MY">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-05-01T16:17:52.636Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MYSQL命令大全">
+<meta name="twitter:description" content="常见的MySQL命令大全2007-11-09 17:59一、连接MySQL   格式： mysql -h主机地址 -u用户名 －p用户密码   1、例1：连接到本机上的MYSQL。   首先在打开DOS窗口，然后进入目录 mysqlbin，再键入命令mysql -uroot -p，回车后提示你输密码，如果刚安装好MYSQL，超级用户root是没有密码的，故直接回车即可进入到MYSQL中了，MY">
+  
+    <link rel="alternate" href="/atom.xml" title="sundusk" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">sundusk</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-MYSQL命令大全" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/05/02/MYSQL命令大全/" class="article-date">
+  <time datetime="2018-05-01T16:16:45.000Z" itemprop="datePublished">2018-05-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      MYSQL命令大全
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>  常见的MySQL命令大全2007-11-09 17:59一、连接MySQL</p>
+<p>  格式： mysql -h主机地址 -u用户名 －p用户密码</p>
+<p>  1、例1：连接到本机上的MYSQL。</p>
+<p>  首先在打开DOS窗口，然后进入目录 mysqlbin，再键入命令mysql -uroot -p，回车后提示你输密码，如果刚安装好MYSQL，超级用户root是没有密码的，故直接回车即可进入到MYSQL中了，MYSQL的提示符是： mysql&gt;。</p>
+<p>  2、例2：连接到远程主机上的MYSQL。假设远程主机的IP为：110.110.110.110，用户名为root,密码为abcd123。则键入以下命令：</p>
+<p>  mysql -h110.110.110.110 -uroot -pabcd123</p>
+<p>  （注:u与root可以不用加空格，其它也一样）</p>
+<p>  3、退出MYSQL命令： exit （回车）。</p>
+<p>  二、修改密码</p>
+<p>  格式：mysqladmin<br>  -u用户名 -p旧密码 password 新密码</p>
+<p>  1、例1：给root加个密码ab12。首先在DOS下进入目录mysqlbin，然后键入以下命令：</p>
+<p>  mysqladmin -uroot -password ab12</p>
+<p>  注：因为开始时root没有密码，所以-p旧密码一项就可以省略了。</p>
+<p>  2、例2：再将root的密码改为djg345。</p>
+<p>  mysqladmin -uroot -pab12 password djg345</p>
+<p>  三、增加新用户。（注意：和上面不同，下面的因为是MySQL环境中的命令，所以后面都带一个分号作为命令结束符）</p>
+<p>  格式：grant<br>  select on 数据库.* to 用户名@登录主机 identified by \”密码\”</p>
+<p>  例1、增加一个用户test1密码为abc，让他可以在任何主机上登录，并对所有数据库有查询、插入、修改、删除的权限。首先用以root用户连入MySQL，然后键入以下命令：</p>
+<p>  grant select,insert,update,</p>
+<p>  delete on <em>.</em> to <a href="mailto:test2@localhost" target="_blank" rel="noopener">test2@localhost</a><br>  identified by \”abc\”;</p>
+<p>  如果你不想test2有密码，可以再打一个命令将密码消掉。</p>
+<p>  grant select,insert,update,delete on mydb</p>
+<p>  .* to <a href="mailto:test2@localhost" target="_blank" rel="noopener">test2@localhost</a> identified by \”\”;</p>
+<p>  在上面讲了登录、增加用户、密码更改等问题。下面我们来看看MySQL中有关数据库方面的操作。注意：你必须首先登录到MySQL中，以下操作都是在MySQL的提示符下进行的，而且每个命令以分号结束。<br>  1、MySQL常用命令<br>  create database name; 创建数据库<br>  use databasename; 选择数据库<br>  drop database name 直接删除数据库，不提醒<br>  show tables; 显示表<br>  describe tablename; 表的详细描述<br>  select 中加上distinct去除重复字段<br>  mysqladmin drop database name 删除数据库前，有提示。<br>  显示当前mysql版本和当前日期<br>  select version(),current_date;<br>  2、修改mysql中root的密码：<br>  shell&gt;mysql -u root -p<br>  mysql&gt; update user set<br>  password=password(”xueok654123″) where user=’root’;<br>  mysql&gt; flush privileges //刷新数据库<br>  mysql&gt;use dbname； 打开数据库：<br>  mysql&gt;show databases; 显示所有数据库<br>  mysql&gt;show tables; 显示数据库mysql中所有的表：先use mysql；然后<br>  mysql&gt;describe user; 显示表mysql数据库中user表的列信息）；<br>  3、grant<br>  创建一个可以从任何地方连接服务器的一个完全的超级用户，但是必须使用一个口令something做这个<br>  mysql&gt; grant all privileges on <em>.</em> to <a href="mailto:user@localhost" target="_blank" rel="noopener">user@localhost</a> identified by ’something’<br>  with<br>  增加新用户<br>  格式：grant<br>  select on 数据库.<em> to 用户名@登录主机 identified by “密码”<br>  GRANT ALL PRIVILEGES ON </em>.<em> TO <a href="mailto:monty@localhost" target="_blank" rel="noopener">monty@localhost</a> IDENTIFIED BY ’something’<br>  WITH GRANT OPTION;<br>  GRANT ALL PRIVILEGES ON </em>.<em> TO <a href="mailto:monty@" target="_blank" rel="noopener">monty@”%</a>” IDENTIFIED BY ’something’ WITH GRANT<br>  OPTION;<br>  删除授权：<br>  mysql&gt; revoke all privileges on </em>.<em><br>  from <a href="mailto:root@" target="_blank" rel="noopener">root@”%</a>”;<br>  mysql&gt; delete from user where user=”root”<br>  and host=”%”;<br>  mysql&gt; flush privileges;<br>  创建一个用户custom在特定客户端it363.com登录，可访问特定数据库fangchandb<br>  mysql &gt;grant select, insert, update,<br>  delete, create,drop on fangchandb.</em> to custom@ it363.com identified by ‘<br>  passwd’<br>  重命名表:<br>  mysql &gt; alter table t1 rename t2;<br>  4、mysqldump<br>  备份数据库<br>  shell&gt; mysqldump -h host -u root -p<br>  dbname &gt;dbname_backup.sql<br>  恢复数据库<br>  shell&gt; mysqladmin -h myhost -u root -p<br>  create dbname<br>  shell&gt; mysqldump -h host -u root -p<br>  dbname &lt; dbname_backup.sql<br>  如果只想卸出建表指令，则命令如下：<br>  shell&gt; mysqladmin -u root -p -d<br>  databasename &gt; a.sql<br>  如果只想卸出插入数据的sql命令，而不需要建表命令，则命令如下：<br>  shell&gt; mysqladmin -u root -p -t<br>  databasename &gt; a.sql<br>  那么如果我只想要数据，而不想要什么sql命令时，应该如何操作呢？<br>  　　 mysqldump<br>  -T./ phptest driver<br>  其中，只有指定了-T参数才可以卸出纯文本文件，表示卸出数据的目录，./表示当前目录，即与mysqldump同一目录。如果不指定driver 表，则将卸出整个数据库的数据。每个表会生成两个文件，一个为.sql文件，包含建表执行。另一个为.txt文件，只包含数据，且没有sql指令。<br>  5、可将查询存储在一个文件中并告诉mysql从文件中读取查询而不是等待键盘输入。可利用外壳程序键入重定向实用程序来完成这项工作。例如，如果在文件my_file.sql 中存放有查<br>  询，可如下执行这些查询：<br>  例如，如果您想将建表语句提前写在sql.txt中:<br>  mysql &gt; mysql -h myhost -u root -p<br>  database &lt; sql.txt<br>  1、安装环境：<br>        Windows XP<br>        Mysql<br>  4.0.17 从<br>  下次就需要用mysql<br>  -uroot -proot才可以登陆<br>      在远程或本机可以使用 mysql -h 172.5.1.183<br>  -uroot 登陆，这个根据第二行的策略确定<br>      权限修改生效：</p>
+<p>  1)net stop mysql</p>
+<p>  net start mysql</p>
+<p>  2)c:\mysql\bin\mysqladmin flush-privileges<br>         3)登陆mysql后，用flush privileges语句<br>  6、创建数据库staffer<br>      create database<br>  staffer;<br>  7、下面的语句在mysql环境在执行<br>      显示用户拥有权限的数据库<br>  show databases;<br>      切换到staffer数据库<br>  use staffer;<br>      显示当前数据库中有权限的表 show tables;<br>      显示表staffer的结构    desc<br>  staffer;<br>  8、创建测试环境<br>      1)创建数据库staffer<br>        mysql&gt;<br>  create database staffer<br>      2)创建表staffer,department,position,depart_pos<br>        create<br>  table s_position<br>        (</p>
+<p>  id int not null auto_increment,</p>
+<p>  name varchar(20) not null default ‘经理’, #设定默认值</p>
+<p>  description varchar(100),</p>
+<p>  primary key PK_positon (id)   #设定主键</p>
+<p>  );<br>        create<br>  table department<br>        (</p>
+<p>  id int not null auto_increment,</p>
+<p>  name varchar(20) not null default ‘系统部’, #设定默认值</p>
+<p>  description varchar(100),</p>
+<p>  primary key PK_department (id)   #设定主键<br>        );<br>        create<br>  table depart_pos<br>        (</p>
+<p>  department_id int not null,</p>
+<p>  position_id int not null,</p>
+<p>  primary key PK_depart_pos (department_id,position_id)   #设定复和主键<br>        );<br>        create<br>  table staffer<br>        (</p>
+<p>  id int not null auto_increment primary key,   #设定主键</p>
+<p>  name varchar(20) not null default ‘无名氏’,   #设定默认值</p>
+<p>  department_id int not null,</p>
+<p>  position_id int not null,</p>
+<p>  unique (department_id,position_id)   #设定唯一值<br>        );<br>      3)删除<br>        mysql&gt;</p>
+<p>  drop table depart_pos;</p>
+<p>  drop table department;</p>
+<p>  drop table s_position;</p>
+<p>  drop table staffer;</p>
+<p>  drop database staffer;<br>  9、修改结构<br>      mysql&gt;</p>
+<pre><code>#表position增加列test
+</code></pre><p>​      alter table position<br>  add(test char(10));</p>
+<pre><code>#表position修改列test
+</code></pre><p>​      alter table position<br>  modify test char(20) not null;</p>
+<pre><code>#表position修改列test默认值
+</code></pre><p>​      alter table position<br>  alter test set default ‘system’;</p>
+<pre><code>#表position去掉test默认值
+</code></pre><p>​      alter table position<br>  alter test drop default;</p>
+<pre><code>#表position去掉列test
+</code></pre><p>​      alter table position<br>  drop column test;</p>
+<pre><code>#表depart_pos删除主键
+</code></pre><p>​      alter table depart_pos<br>  drop primary key;</p>
+<pre><code>#表depart_pos增加主键
+</code></pre><p>​      alter table depart_pos<br>  add primary key PK_depart_pos (department_id,position_id);<br>  10、操作数据</p>
+<pre><code>#插入表department
+</code></pre><p>​      insert into<br>  department(name,description) values(‘系统部’,’系统部’);<br>      insert into<br>  department(name,description) values(‘公关部’,’公关部’);<br>      insert into<br>  department(name,description) values(‘客服部’,’客服部’);<br>      insert into<br>  department(name,description) values(‘财务部’,’财务部’);<br>      insert into<br>  department(name,description) values(‘测试部’,’测试部’);</p>
+<pre><code>#插入表s_position
+</code></pre><p>​      insert into<br>  s_position(name,description) values(‘总监’,’总监’);<br>      insert into<br>  s_position(name,description) values(‘经理’,’经理’);<br>      insert into<br>  s_position(name,description) values(‘普通员工’,’普通员工’);</p>
+<pre><code>#插入表depart_pos
+</code></pre><p>​      insert into<br>  depart_pos(department_id,position_id)<br>      select a.id<br>  department_id,b.id postion_id<br>      from department<br>  a,s_position b;</p>
+<pre><code>#插入表staffer
+</code></pre><p>​      insert into<br>  staffer(name,department_id,position_id) values(‘陈达治’,1,1);<br>      insert into<br>  staffer(name,department_id,position_id) values(‘李文宾’,1,2);<br>      insert into<br>  staffer(name,department_id,position_id) values(‘马佳’,1,3);<br>      insert into<br>  staffer(name,department_id,position_id) values(‘亢志强’,5,1);<br>      insert into<br>  staffer(name,department_id,position_id) values(‘杨玉茹’,4,1);<br>  11、查询及删除操作</p>
+<pre><code>#显示系统部的人员和职位
+</code></pre><p>​      select a.name,b.name<br>  department_name,c.name position_name<br>      from staffer<br>  a,department b,s_position c<br>      where<br>  a.department_id=b.id and a.position_id=c.id and b.name=’系统部’;</p>
+<pre><code>#显示系统部的人数
+</code></pre><p>​      select count(*) from<br>  staffer a,department b<br>      where<br>  a.department_id=b.id and b.name=’系统部’</p>
+<pre><code>#显示各部门的人数
+</code></pre><p>​      select count(*)<br>  cou,b.name<br>      from staffer<br>  a,department b<br>      where<br>  a.department_id=b.id<br>      group by b.name;</p>
+<pre><code>#删除客服部
+</code></pre><p>​      delete from department<br>  where name=’客服部’;</p>
+<pre><code>#将财务部修改为财务一部
+</code></pre><p>​      update department set<br>  name=’财务一部’ where<br>  name=’财务部’;<br>  12、备份和恢复<br>       备份数据库staffer</p>
+<p>  c:\mysql\bin\mysqldump -uroot -proot staffer&gt;e:\staffer.sql<br>        得到的staffer.sql是一个sql脚本，不包括建库的语句，所以你需要手工<br>        创建数据库才可以导入<br>       恢复数据库staffer,需要创建一个空库staffer</p>
+<p>  c:\mysql\bin\mysql -uroot -proot staffer&lt;staffer.sql<br>        如果不希望后来手工创建staffer,可以</p>
+<p>  c:\mysql\bin\mysqldump -uroot -proot –databases staffer&gt;e:\staffer.sql<br>        mysql<br>  -uroot -proot &gt;e:\staffer.sql<br>        但这样的话系统种就不能存在staffer库，且无法导入其他名字的数据库，<br>        当然你可以手工修改staffer.sql文件<br>  13、从文本向数据库导入数据<br>       1)使用工具c:\mysql\bin\mysqlimport<br>       这个工具的作用是将文件导入到和去掉文件扩展名名字相同的表里，如</p>
+<p>  staffer.txt,staffer都是导入到staffer表中<br>       常用选项及功能如下<br>  -d or –delete 新数据导入数据表中之前删除数据数据表中的所有信息<br>  -f or –force 不管是否遇到错误，mysqlimport将强制继续插入数据<br>  -i or –ignore mysqlimport跳过或者忽略那些有相同唯一<br>  关键字的行， 导入文件中的数据将被忽略。<br>  -l or -lock-tables 数据被插入之前锁住表，这样就防止了，<br>  你在更新数据库时，用户的查询和更新受到影响。<br>  -r or -replace 这个选项与－i选项的作用相反；此选项将替代<br>  表中有相同唯一关键字的记录。<br>  –fields-enclosed- by= char<br>  指定文本文件中数据的记录时以什么括起的， 很多情况下<br>  数据以双引号括起。 默认的情况下数据是没有被字符括起的。<br>  –fields-terminated- by=char<br>  指定各个数据的值之间的分隔符，在句号分隔的文件中，<br>  分隔符是句号。您可以用此选项指定数据之间的分隔符。<br>  默认的分隔符是跳格符（Tab）<br>  –lines-terminated- by=str<br>  此选项指定文本文件中行与行之间数据的分隔字符串<br>  或者字符。 默认的情况下mysqlimport以newline为行分隔符。<br>  您可以选择用一个字符串来替代一个单个的字符：<br>  一个新行或者一个回车。<br>  mysqlimport命令常用的选项还有-v 显示版本（version），</p>
+<p>  -p 提示输入密码（password）等。<br>      这个工具有个问题，无法忽略某些列，这样对我们的数据导入有很大的麻烦，虽然<br>      可以手工设置这个字段，但会出现莫名其妙的结果，我们做一个简单的示例<br>      我们定义如下的depart_no.txt，保存在e盘，间隔为制表符\t<br>  10 10<br>  11 11<br>  12 24<br>  执行如下命令<br>       c:\mysql\bin\mysqlimport<br>  -uroot -proot staffer e:\depart_pos.txt<br>       在这里没有使用列的包围符号，分割采用默认的\t，因为采用别的符号会有问题，<br>       不知道是不是windows的原因<br>       2)Load Data<br>  INFILE file_name into table_name(column1_name,column2_name)<br>         这个命令在mysql&gt;提示符下使用，优点是可以指定列导入，示例如下<br>         c:\mysql\bin\mysql<br>  -uroot -proot staffer</p>
+<p>  mysql&gt;load data infile “e:/depart_no.txt” into<br>  depart_no(department_id,position_id);</p>
+<p>​       这两个工具在Windows下使用都有问题，不知道是Windows的原因还是中文的问题，<br>       而且不指定的列它产生了空值，这显然不是我们想要的，所以谨慎使用这些工具<br>  进入MySQL:mysql<br>  -uuser -ppassword –port=3307<br>  1:使用SHOW语句找出在服务器上当前存在什么数据库：<br>  mysql&gt; SHOW DATABASES;<br>  2:2、创建一个数据库MYSQLDATA<br>  mysql&gt; Create DATABASE MYSQLDATA;<br>  3:选择你所创建的数据库<br>  mysql&gt; USE MYSQLDATA; (按回车键出现Database changed 时说明操作成功！)<br>  4:查看现在的数据库中存在什么表<br>  mysql&gt; SHOW TABLES;<br>  5:创建一个数据库表<br>  mysql&gt; Create TABLE MYTABLE (name<br>  VARCHAR(20), sex CHAR(1));<br>  6:显示表的结构：<br>  mysql&gt; DESCRIBE MYTABLE;<br>  7:往表中加入记录<br>  mysql&gt; insert into MYTABLE values<br>  (“hyq”,”M”);<br>  8:用文本方式将数据装入数据库表中（例如D:/mysql.txt）<br>  mysql&gt; LOAD DATA LOCAL INFILE<br>  “D:/mysql.txt” INTO TABLE MYTABLE;<br>  9:导入.sql文件命令（例如D:/mysql.sql）<br>  mysql&gt;use database;<br>  mysql&gt;source d:/mysql.sql;<br>  10:删除表<br>  mysql&gt;drop TABLE MYTABLE;<br>  11:清空表<br>  mysql&gt;delete from MYTABLE;<br>  12:更新表中数据<br>  mysql&gt;update MYTABLE set<br>  sex=”f” where name=’hyq’;<br>  UPDATE [LOW_PRIORITY] [IGNORE] tbl_name<br>      SET col_name1=expr1 [,<br>  col_name2=expr2 …]<br>      [WHERE<br>  where_definition]<br>      [ORDER BY …]<br>      [LIMIT rows]<br>  or<br>  UPDATE [LOW_PRIORITY] [IGNORE] tbl_name<br>  [, tbl_name …]<br>      SET col_name1=expr1 [,<br>  col_name2=expr2 …]<br>      [WHERE<br>  where_definition]<br>  UPDATE 以新的值更新现存表中行的列。SET 子句指出要修改哪个列和他们应该给定的值。WHERE<br>        子句如果被给出，指定哪个记录行应该被更新。否则，所有的记录行被更新。如果 ORDER BY 子句被指定，记录行将被以指定的次序更新。<br>        如果你指定关键词 LOW_PRIORITY，UPDATE 的执行将被延迟，直到没有其它的客户端正在读取表。<br>        如果你指定关键词 IGNORE，该更新语句将不会异常中止，即使在更新过程中出现重复键错误。导致冲突的记录行将不会被更新。<br>        如果在一个表达式中从 tbl_name 中访问一个列，UPDATE 使用列的当前值。举例来说，下面的语句设置 age 列值为它的当前值加 1 ：<br>  mysql&gt; UPDATE persondata SET<br>  age=age+1;<br>  UPDATE 赋值是从左到右计算的。举例来说，下列语句将 age 列设置为它的两倍，然后再加 1 ：<br>  mysql&gt; UPDATE persondata SET<br>  age=age<em>2, age=age+1;<br>  如果你设置列为其当前的值，MySQL 注意到这点，并不更新它。<br>        UPDATE 返回实际被改变的记录行数目。在 MySQL 3.22 或更新的版本中，C API 函数 mysql_info()<br>        返回被匹配并更新的记录行数目，以及在 UPDATE 期间发生的警告的数目。<br>        在 MySQL 3.23 中，你可以使用 LIMIT # 来确保只有给定的记录行数目被更改。<br>        如果一个 ORDER BY 子句被使用(从 MySQL 4.0.0 开始支持)，记录行将以指定的次序被更新。这实际上只有连同 LIMIT<br>        一起才有用。<br>        从 MySQL 4.0.4 开始，你也可以执行一个包含多个表的 UPDATE 的操作：<br>  UPDATE items,month SET<br>  items.price=month.price<br>  WHERE items.id=month.id;<br>  注意：多表 UPDATE<br>  不可以使用 ORDER<br>  BY 或 LIMIT。<br>  关键字:<br>  mysql<br>  启动：net start<br>  mySql;<br>  　　进入：mysql<br>  -u root -p/mysql -h localhost -u root -p databaseName;<br>  　　列出数据库：show<br>  databases;<br>  　　选择数据库：use<br>  databaseName;<br>  　　列出表格：show<br>  tables；<br>  　　显示表格列的属性：show<br>  columns from tableName；<br>  　　建立数据库：source<br>  fileName.txt;<br>  　　匹配字符：可以用通配符_代表任何一个字符，％代表任何字符串;<br>  　　增加一个字段：alter<br>  table tabelName add column fieldName dateType;<br>  　　增加多个字段：alter<br>  table tabelName add column fieldName1 dateType,add columns fieldName2<br>  dateType;<br>  　　多行命令输入:注意不能将单词断开;当插入或更改数据时，不能将字段的字符串展开到多行里，否则硬回车将被储存到数据中;<br>  　　增加一个管理员帐户：grant<br>  all on </em>.<em> to <a href="mailto:user@localhost" target="_blank" rel="noopener">user@localhost</a> identified<br>  by “password”;<br>  　　每条语句输入完毕后要在末尾填加分号’;’，或者填加’\g’也可以；<br>  　　查询时间：select<br>  now();<br>  　　查询当前用户：select<br>  user();<br>  　　查询数据库版本：select<br>  version();<br>  　　查询当前使用的数据库：select database();<br>  　　<br>  　　1、删除student_course数据库中的students数据表：<br>  　　rm -f<br>  student_course/students.</em><br>  　　<br>  　　2、备份数据库：(将数据库test备份)<br>  　　mysqldump<br>  -u root -p test&gt;c:\test.txt<br>  　　备份表格：(备份test数据库下的mytable表格)<br>  　　mysqldump<br>  -u root -p test mytable&gt;c:\test.txt<br>  　　将备份数据导入到数据库：(导回test数据库)<br>  　　mysql -u<br>  root -p test<br>  　　<br>  　　3、创建临时表：(建立临时表zengchao)<br>  　　create<br>  temporary table zengchao(name varchar(10));<br>  　　<br>  　　4、创建表是先判断表是否存在<br>  　　create<br>  table if not exists students(……);<br>  　　<br>  　　5、从已经有的表中复制表的结构<br>  　　create<br>  table table2 select <em> from table1 where 1&lt;&gt;1;<br>  　　<br>  　　6、复制表<br>  　　create<br>  table table2 select </em> from table1;<br>  　　<br>  　　7、对表重新命名<br>  　　alter<br>  table table1 rename as table2;<br>  　　<br>  　　8、修改列的类型<br>  　　alter<br>  table table1 modify id int unsigned;//修改列id的类型为int<br>  unsigned<br>  　　alter<br>  table table1 change id sid int unsigned;//修改列id的名字为sid，而且把属性修改为int unsigned<br>  　　<br>  　　9、创建索引<br>  　　alter<br>  table table1 add index ind_id (id);<br>  　　create<br>  index ind_id on table1 (id);<br>  　　create<br>  unique index ind_id on table1 (id);//建立唯一性索引<br>  　　<br>  　　10、删除索引<br>  　　drop index<br>  idx_id on table1;<br>  　　alter<br>  table table1 drop index ind_id;<br>  　　<br>  　　11、联合字符或者多个列(将列id与”:”和列name和”=”连接)<br>  　　select<br>  concat(id,’:’,name,’=’) from students;<br>  　　<br>  　　12、limit(选出10到20条)&lt;第一个记录集的编号是0&gt;<br>  　　select <em><br>  from students order by id limit 9,10;<br>  　　<br>  　　13、MySQL不支持的功能<br>  　　事务，视图，外键和引用完整性，存储过程和触发器<br>  　　<br>  　　<br>  　　14、MySQL会使用索引的操作符号<br>  　　&lt;,&lt;=,&gt;=,&gt;,=,between,in,不带%或者_开头的like<br>  　　<br>  　　15、使用索引的缺点<br>  　　1)减慢增删改数据的速度；<br>  　　2）占用磁盘空间；<br>  　　3）增加查询优化器的负担；<br>  　　当查询优化器生成执行计划时，会考虑索引，太多的索引会给查询优化器增加工作量，导致无法选择最优的查询方案；<br>  　　<br>  　　16、分析索引效率<br>  　　方法：在一般的SQL语句前加上explain；<br>  　　分析结果的含义：<br>  　　1）table：表名；<br>  　　2）type：连接的类型，(ALL/Range/Ref)。其中ref是最理想的；<br>  　　3）possible_keys：查询可以利用的索引名；<br>  　　4）key：实际使用的索引；<br>  　　5）key_len：索引中被使用部分的长度（字节）；<br>  　　6）ref：显示列名字或者”const”（不明白什么意思）；<br>  　　7）rows：显示MySQL认为在找到正确结果之前必须扫描的行数；<br>  　　8）extra：MySQL的建议；<br>  　　<br>  　　17、使用较短的定长列<br>  　　1）尽可能使用较短的数据类型；<br>  　　2）尽可能使用定长数据类型；<br>  　　a）用char代替varchar，固定长度的数据处理比变长的快些；<br>  　　b）对于频繁修改的表，磁盘容易形成碎片，从而影响数据库的整体性能；<br>  　　c）万一出现数据表崩溃，使用固定长度数据行的表更容易重新构造。使用固定长度的数据行，每个记录的开始位置都是固定记录长度的倍数，可以很容易被检测到，但是使用可变长度的数据行就不一定了；<br>  　　d）对于MyISAM类型的数据表，虽然转换成固定长度的数据列可以提高性能，但是占据的空间也大；<br>  　　<br>  　　18、使用not null和enum<br>  　　尽量将列定义为not<br>  null，这样可使数据的出来更快，所需的空间更少，而且在查询时，MySQL不需要检查是否存在特例，即null值，从而优化查询；<br>  　　如果一列只含有有限数目的特定值，如性别，是否有效或者入学年份等，在这种情况下应该考虑将其转换为enum列的值，MySQL处理的更快，因为所有的enum值在系统内都是以标识数值来表示的；<br>  　　<br>  　　19、使用optimize table<br>  　　对于经常修改的表，容易产生碎片，使在查询数据库时必须读取更多的磁盘块，降低查询性能。具有可变长的表都存在磁盘碎片问题，这个问题对blob数据类型更为突出，因为其尺寸变化非常大。可以通过使用optimize table来整理碎片，保证数据库性能不下降，优化那些受碎片影响的数据表。 optimize table可以用于MyISAM和BDB类型的数据表。实际上任何碎片整理方法都是用mysqldump来转存数据表，然后使用转存后的文件并重新建数据表；<br>  　　<br>  　　20、使用procedure analyse()<br>  　　可以使用procedure<br>  analyse()显示最佳类型的建议，使用很简单，在select语句后面加上procedure analyse()就可以了；例如：<br>  　　select </em><br>  from students procedure analyse();<br>  　　select *<br>  from students procedure analyse(16,256);<br>  　　第二条语句要求procedure<br>  analyse()不要建议含有多于16个值，或者含有多于256字节的enum类型，如果没有限制，输出可能会很长；<br>  　　<br>  　　21、使用查询缓存<br>  　　1）查询缓存的工作方式：<br>  　　第一次执行某条select语句时，服务器记住该查询的文本内容和查询结果，存储在缓存中，下次碰到这个语句时，直接从缓存中返回结果；当更新数据表后，该数据表的任何缓存查询都变成无效的，并且会被丢弃。<br>  　　2）配置缓存参数：<br>  　　变量：query_cache<br>  _type，查询缓存的操作模式。有3中模式，0：不缓存；1：缓存查询，除非与 select sql_no_cache开头；2：根据需要只缓存那些以select sql_cache开头的查询； query_cache_size：设置查询缓存的最大结果集的大小，比这个值大的不会被缓存。<br>  　　<br>  　　22、调整硬件<br>  　　1）在机器上装更多的内存；<br>  　　2）增加更快的硬盘以减少I/O等待时间；<br>  　　寻道时间是决定性能的主要因素，逐字地移动磁头是最慢的，一旦磁头定位，从磁道读则很快；<br>  　　3）在不同的物理硬盘设备上重新分配磁盘活动；<br>  　　如果可能，应将最繁忙的数据库存放在不同的物理设备上，这跟使用同一物理设备的不同分区是不同的，因为它们将争用相同的物理资源（磁头）。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/05/02/MYSQL命令大全/" data-id="cjgnvmslz0002yqxmzak3ctv8" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2018/05/01/GitHub最著名的20个Python机器学习项目/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">GitHub最著名的20个Python机器学习项目</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/05/02/MYSQL命令大全/">MYSQL命令大全</a>
+          </li>
+        
+          <li>
+            <a href="/2018/05/01/GitHub最著名的20个Python机器学习项目/">GitHub最著名的20个Python机器学习项目</a>
+          </li>
+        
+          <li>
+            <a href="/2018/05/01/终端命令行补充/">终端命令行补充</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/13/Swift-八种排序算法/">Swift-八种排序算法</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/13/Mac终端命令/">Mac终端命令</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
