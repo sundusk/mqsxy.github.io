@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Swift4.0字符串（String）学习 | sundusk</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="定义字符串常量（常量只有读操作）12let lString = &amp;quot;constant&amp;quot;let lString1: String = &amp;quot;constant&amp;quot; 定义字符串变量123var string = &amp;quot;&amp;quot;var string1: String = &amp;quot;哈哈&amp;quot;var string2 = String() 赋值1string">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Swift4.0字符串（String）学习">
+<meta property="og:url" content="http://yoursite.com/2018/05/14/Swift4-0字符串（String）学习/index.html">
+<meta property="og:site_name" content="sundusk">
+<meta property="og:description" content="定义字符串常量（常量只有读操作）12let lString = &amp;quot;constant&amp;quot;let lString1: String = &amp;quot;constant&amp;quot; 定义字符串变量123var string = &amp;quot;&amp;quot;var string1: String = &amp;quot;哈哈&amp;quot;var string2 = String() 赋值1string">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-05-14T06:15:52.593Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Swift4.0字符串（String）学习">
+<meta name="twitter:description" content="定义字符串常量（常量只有读操作）12let lString = &amp;quot;constant&amp;quot;let lString1: String = &amp;quot;constant&amp;quot; 定义字符串变量123var string = &amp;quot;&amp;quot;var string1: String = &amp;quot;哈哈&amp;quot;var string2 = String() 赋值1string">
+  
+    <link rel="alternate" href="/atom.xml" title="sundusk" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">sundusk</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Swift4-0字符串（String）学习" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/05/14/Swift4-0字符串（String）学习/" class="article-date">
+  <time datetime="2018-05-14T06:14:23.000Z" itemprop="datePublished">2018-05-14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Swift4.0字符串（String）学习
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="定义字符串常量（常量只有读操作）"><a href="#定义字符串常量（常量只有读操作）" class="headerlink" title="定义字符串常量（常量只有读操作）"></a>定义字符串常量（常量只有读操作）</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">let lString = &quot;constant&quot;</span><br><span class="line">let lString1: String = &quot;constant&quot;</span><br></pre></td></tr></table></figure>
+<h4 id="定义字符串变量"><a href="#定义字符串变量" class="headerlink" title="定义字符串变量"></a>定义字符串变量</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var string = &quot;&quot;</span><br><span class="line">var string1: String = &quot;哈哈&quot;</span><br><span class="line">var string2 = String()</span><br></pre></td></tr></table></figure>
+<h4 id="赋值"><a href="#赋值" class="headerlink" title="赋值"></a>赋值</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string = &quot;this-is-a-string-variable&quot;</span><br></pre></td></tr></table></figure>
+<h4 id="字符串分割"><a href="#字符串分割" class="headerlink" title="字符串分割"></a>字符串分割</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">let stringArray = string.split(separator: &quot;-&quot;) // 按&apos;-&apos;分割</span><br><span class="line">print(stringArray) // [&quot;this&quot;, &quot;is&quot;, &quot;a&quot;, &quot;string&quot;, &quot;variable&quot;]</span><br></pre></td></tr></table></figure>
+<h4 id="字符串截取"><a href="#字符串截取" class="headerlink" title="字符串截取"></a>字符串截取</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">let start = string.startIndex  // 开始下标</span><br></pre></td></tr></table></figure>
+<p>let end = string.index（string.startIndex，offsetBy：7）//结束下标let subString = string [start .. <end> 1，string.startIndex表示第一个字符的下标</end></p>
+<blockquote>
+<p>2，string.endIndex表示最后一个字符的下标3，startIndex，endIndex是索引类型，不是Int类型</p>
+</blockquote>
+<h4 id="字符串拼接"><a href="#字符串拼接" class="headerlink" title="字符串拼接"></a>字符串拼接</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">string += &quot;!&quot;       // 追加&apos;!&apos;</span><br><span class="line">print(string)       // this-is-a-string-variable!</span><br><span class="line"></span><br><span class="line">string += string1   // 追加字符串变量string1</span><br><span class="line">print(string)       // this-is-a-string-variable!哈哈</span><br><span class="line"></span><br><span class="line">let num = 100</span><br><span class="line">string = string + &quot;--\(num)&quot;</span><br><span class="line">print(string)       // this-is-a-string-variable!哈哈--100</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/05/14/Swift4-0字符串（String）学习/" data-id="cjh5uw3hq00029mxmy5xiq3ah" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/05/14/Swift4.0字典（Dictionary）学习/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          4.0字典（Dictionary）学习
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/05/14/Swift4.0数组（Array）之过滤器（过滤器）的使用/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">4.0数组（Array）之过滤器（过滤器）的使用</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/05/14/Swift4.0数组（阵列）学习/">4.0数组（阵列）学习</a>
+          </li>
+        
+          <li>
+            <a href="/2018/05/14/Swift4.0字典（Dictionary）学习/">4.0字典（Dictionary）学习</a>
+          </li>
+        
+          <li>
+            <a href="/2018/05/14/Swift4-0字符串（String）学习/">Swift4.0字符串（String）学习</a>
+          </li>
+        
+          <li>
+            <a href="/2018/05/14/Swift4.0数组（Array）之过滤器（过滤器）的使用/">4.0数组（Array）之过滤器（过滤器）的使用</a>
+          </li>
+        
+          <li>
+            <a href="/2018/05/14/Swift4.0中的错误处理及抛出错误/">Swift4.0中的错误处理及抛出错误</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

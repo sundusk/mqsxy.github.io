@@ -5,19 +5,19 @@
   
 
   
-  <title>念十八 | sundusk</title>
+  <title>4.0数组（Array）之过滤器（过滤器）的使用 | sundusk</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="也曾年少也曾狂嬉笑痴情费周章命恨相思催人老一夜青丝雪茫茫">
+  <meta name="description" content="我们先来定义一个常量整型数组 让array = [5，4，3，1，2] 过滤器（过滤器）使用之筛选出大于3的值let resultArray = array.filter {（item） - &amp;gt; Bool in return item&amp;gt; 3} print（resultArray）// [5,4] 简化可以这样写 let resultArray = array.filter {retur">
 <meta property="og:type" content="article">
-<meta property="og:title" content="念十八">
-<meta property="og:url" content="http://yoursite.com/2018/04/01/念十八/index.html">
+<meta property="og:title" content="4.0数组（Array）之过滤器（过滤器）的使用">
+<meta property="og:url" content="http://yoursite.com/2018/05/14/Swift4.0数组（Array）之过滤器（过滤器）的使用/index.html">
 <meta property="og:site_name" content="sundusk">
-<meta property="og:description" content="也曾年少也曾狂嬉笑痴情费周章命恨相思催人老一夜青丝雪茫茫">
+<meta property="og:description" content="我们先来定义一个常量整型数组 让array = [5，4，3，1，2] 过滤器（过滤器）使用之筛选出大于3的值let resultArray = array.filter {（item） - &amp;gt; Bool in return item&amp;gt; 3} print（resultArray）// [5,4] 简化可以这样写 let resultArray = array.filter {retur">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-03-31T19:56:42.489Z">
+<meta property="og:updated_time" content="2018-05-14T06:13:16.147Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="念十八">
-<meta name="twitter:description" content="也曾年少也曾狂嬉笑痴情费周章命恨相思催人老一夜青丝雪茫茫">
+<meta name="twitter:title" content="4.0数组（Array）之过滤器（过滤器）的使用">
+<meta name="twitter:description" content="我们先来定义一个常量整型数组 让array = [5，4，3，1，2] 过滤器（过滤器）使用之筛选出大于3的值let resultArray = array.filter {（item） - &amp;gt; Bool in return item&amp;gt; 3} print（resultArray）// [5,4] 简化可以这样写 let resultArray = array.filter {retur">
   
     <link rel="alternate" href="/atom.xml" title="sundusk" type="application/atom+xml">
   
@@ -64,10 +64,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-念十八" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="swift-Swift4.0数组（Array）之过滤器（过滤器）的使用" class="article article-type-swift" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/04/01/念十八/" class="article-date">
-  <time datetime="2018-03-31T19:54:40.000Z" itemprop="datePublished">2018-04-01</time>
+    <a href="/2018/05/14/Swift4.0数组（Array）之过滤器（过滤器）的使用/" class="article-date">
+  <time datetime="2018-05-14T06:12:10.000Z" itemprop="datePublished">2018-05-14</time>
 </a>
     
   </div>
@@ -78,7 +78,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      念十八
+      4.0数组（Array）之过滤器（过滤器）的使用
     </h1>
   
 
@@ -86,11 +86,25 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="也曾年少也曾狂"><a href="#也曾年少也曾狂" class="headerlink" title="也曾年少也曾狂"></a>也曾年少也曾狂</h2><h2 id="嬉笑痴情费周章"><a href="#嬉笑痴情费周章" class="headerlink" title="嬉笑痴情费周章"></a>嬉笑痴情费周章</h2><h2 id="命恨相思催人老"><a href="#命恨相思催人老" class="headerlink" title="命恨相思催人老"></a>命恨相思催人老</h2><h2 id="一夜青丝雪茫茫"><a href="#一夜青丝雪茫茫" class="headerlink" title="一夜青丝雪茫茫"></a>一夜青丝雪茫茫</h2>
+        <p>我们先来定义一个常量整型数组</p>
+<p>让array = [5，4，3，1，2]</p>
+<h4 id="过滤器（过滤器）使用之筛选出大于3的值"><a href="#过滤器（过滤器）使用之筛选出大于3的值" class="headerlink" title="过滤器（过滤器）使用之筛选出大于3的值"></a>过滤器（过滤器）使用之筛选出大于3的值</h4><p>let resultArray = array.filter {（item） - &gt; Bool in return item&gt; 3} print（resultArray）// [5,4]</p>
+<p>简化可以这样写</p>
+<p>let resultArray = array.filter {return $ 0&gt; 3} print（resultArray）// [5，4]</p>
+<blockquote>
+<p>闭包中的 ‘回归’ 是可以省略的</p>
+</blockquote>
+<h4 id="过滤器（过滤器）使用之筛选出能被2整除的值"><a href="#过滤器（过滤器）使用之筛选出能被2整除的值" class="headerlink" title="过滤器（过滤器）使用之筛选出能被2整除的值"></a>过滤器（过滤器）使用之筛选出能被2整除的值</h4><p>let resultArray = array.filter {（item） - &gt; Bool返回项目％2 == 0} print（resultArray）// [4，2]</p>
+<p>简化可以这样写</p>
+<p>let resultArray = array.filter {return $ 0％2 == 0} print（resultArray）// [4，2]</p>
+<h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><blockquote>
+<p>1，过滤器（过滤器）使用并不复杂，很好掌握。2，过滤器（过滤器）不局限于以上的使用，望能举一反三。接收过滤后的结果。4，以上例子往往是通过来传递数组去实现的，有了过滤器（过滤器）可以更简单的实现，也使代码更整洁，建议合理使用过滤器（过滤器）。</p>
+</blockquote>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/04/01/念十八/" data-id="cjh5uw3i3000c9mxmgzdcl2mw" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/05/14/Swift4.0数组（Array）之过滤器（过滤器）的使用/" data-id="cjh5uw3hw00069mxmmftqtebv" class="article-share-link">Share</a>
       
       
     </footer>
@@ -99,15 +113,20 @@
     
 <nav id="article-nav">
   
-    <a href="/2018/04/03/GIT常用的命令/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2018/05/14/Swift4-0字符串（String）学习/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
-          GIT常用的命令
+          Swift4.0字符串（String）学习
         
       </div>
     </a>
   
+  
+    <a href="/2018/05/14/Swift4.0中的错误处理及抛出错误/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Swift4.0中的错误处理及抛出错误</div>
+    </a>
   
 </nav>
 

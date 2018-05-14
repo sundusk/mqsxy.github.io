@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>4.0数组（阵列）学习 | sundusk</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="定义数组常量（常量只有读操作）让array1：[Int] = [11，55，5]让array2 = [11,55,5] 定义数组变量var array：[Int] = [] //这是我最喜欢的var array0：[Int] = [10，20，30] //初始化并赋值var array1：[Int] = Array（） 123var array2 = Array&amp;lt;Int&amp;gt;()var a">
+<meta property="og:type" content="article">
+<meta property="og:title" content="4.0数组（阵列）学习">
+<meta property="og:url" content="http://yoursite.com/2018/05/14/Swift4.0数组（阵列）学习/index.html">
+<meta property="og:site_name" content="sundusk">
+<meta property="og:description" content="定义数组常量（常量只有读操作）让array1：[Int] = [11，55，5]让array2 = [11,55,5] 定义数组变量var array：[Int] = [] //这是我最喜欢的var array0：[Int] = [10，20，30] //初始化并赋值var array1：[Int] = Array（） 123var array2 = Array&amp;lt;Int&amp;gt;()var a">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-05-14T06:16:32.746Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="4.0数组（阵列）学习">
+<meta name="twitter:description" content="定义数组常量（常量只有读操作）让array1：[Int] = [11，55，5]让array2 = [11,55,5] 定义数组变量var array：[Int] = [] //这是我最喜欢的var array0：[Int] = [10，20，30] //初始化并赋值var array1：[Int] = Array（） 123var array2 = Array&amp;lt;Int&amp;gt;()var a">
+  
+    <link rel="alternate" href="/atom.xml" title="sundusk" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">sundusk</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="swift-Swift4.0数组（阵列）学习" class="article article-type-swift" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/05/14/Swift4.0数组（阵列）学习/" class="article-date">
+  <time datetime="2018-05-14T06:15:07.000Z" itemprop="datePublished">2018-05-14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      4.0数组（阵列）学习
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="定义数组常量（常量只有读操作）"><a href="#定义数组常量（常量只有读操作）" class="headerlink" title="定义数组常量（常量只有读操作）"></a>定义数组常量（常量只有读操作）</h4><p>让array1：[Int] = [11，55，5]让array2 = [11,55,5]</p>
+<h4 id="定义数组变量"><a href="#定义数组变量" class="headerlink" title="定义数组变量"></a>定义数组变量</h4><p>var array：[Int] = [] //这是我最喜欢的var array0：[Int] = [10，20，30] //初始化并赋值var array1：[Int] = Array（）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var array2 = Array&lt;Int&gt;()</span><br><span class="line">var array3 = [Int]()</span><br><span class="line">var array4 = Array(repeating: 0, count: 8) // 初始化一个定长数组,用0填充</span><br></pre></td></tr></table></figure>
+<h4 id="赋值"><a href="#赋值" class="headerlink" title="赋值"></a>赋值</h4><p>array = [5，55，555]</p>
+<h4 id="取值"><a href="#取值" class="headerlink" title="取值"></a>取值</h4><p>let value = array [2] //第几个元素</p>
+<h4 id="删除元素"><a href="#删除元素" class="headerlink" title="删除元素"></a>删除元素</h4><p>array.remove（at：1）//通过下标删除array.removeAll（）//删除所有元素array.removeLast（）//删除最后一个元素array.removeFirst（）//删除第一个元素</p>
+<h4 id="添加元素"><a href="#添加元素" class="headerlink" title="添加元素"></a>添加元素</h4><p>array.append（10）</p>
+<h4 id="元素重新赋值"><a href="#元素重新赋值" class="headerlink" title="元素重新赋值"></a>元素重新赋值</h4><p>数组[1] = 66</p>
+<h4 id="数组遍历"><a href="#数组遍历" class="headerlink" title="数组遍历"></a>数组遍历</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">array.forEach &#123; item in</span><br><span class="line"></span><br><span class="line">     print(item)</span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line"> for item in array &#123;</span><br><span class="line"></span><br><span class="line">     print(item)</span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line"> for (index, value) in array.enumerated() &#123;</span><br><span class="line"></span><br><span class="line">     print(&quot;\(index) --&amp;gt; \(value)&quot;)</span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line"> for index in 0..&amp;lt;array.count &#123;</span><br><span class="line"></span><br><span class="line">     print(array[index])</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/05/14/Swift4.0数组（阵列）学习/" data-id="cjh5uw3hy00089mxmryhu1aka" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2018/05/14/Swift4.0字典（Dictionary）学习/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">4.0字典（Dictionary）学习</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/05/14/Swift4.0数组（阵列）学习/">4.0数组（阵列）学习</a>
+          </li>
+        
+          <li>
+            <a href="/2018/05/14/Swift4.0字典（Dictionary）学习/">4.0字典（Dictionary）学习</a>
+          </li>
+        
+          <li>
+            <a href="/2018/05/14/Swift4-0字符串（String）学习/">Swift4.0字符串（String）学习</a>
+          </li>
+        
+          <li>
+            <a href="/2018/05/14/Swift4.0数组（Array）之过滤器（过滤器）的使用/">4.0数组（Array）之过滤器（过滤器）的使用</a>
+          </li>
+        
+          <li>
+            <a href="/2018/05/14/Swift4.0中的错误处理及抛出错误/">Swift4.0中的错误处理及抛出错误</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
